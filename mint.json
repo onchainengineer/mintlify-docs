@@ -71,13 +71,10 @@
     "github": "https://github.com/wirtual-ai",
     "linkedin": "https://linkedin.com/company/wirtual-ai"
   },
-{
   "api": {
-    "baseUrl": "https://wirtual.e3.cloud.visca.dev/api", 
+    "baseUrl": "https://wirtual.e3.cloud.visca.dev/api",
     "auth": {
-      "method": "bearer" // options: bearer, basic, key.
+      "method": "bearer"
     }
   }
-}
-
 }
