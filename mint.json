@@ -74,7 +74,7 @@
   "api": {
     "baseUrl": "https://wirtual.e3.cloud.visca.dev/api",
     "auth": {
-      "method": "bearer"
+      "method": "key"
     }
   }
 }
