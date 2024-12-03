@@ -25,15 +25,13 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
-    {
   "tabs": [
     {
       "name": "API Reference",
       "url": "api-reference",
       "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/refs/heads/main/api-reference/openapi.json"
     }
-         ]
- },
+         ],
   "anchors": [
     {
       "name": "Documentation",
@@ -67,14 +65,6 @@
         "api-reference/introduction"
       ]
     },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
   ],
   "footerSocials": {
     "x": "https://x.com/mintlify",
