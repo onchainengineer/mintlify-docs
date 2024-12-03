@@ -29,15 +29,15 @@
     {
       "name": "API Reference",
       "url": "api-reference",
-      "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/refs/heads/main/api-reference/openapi.json"
+      "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/main/api-reference/openapi.json"
     }
-         ],
+  ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
-    },
+    }
   ],
   "navigation": [
     {
@@ -64,7 +64,7 @@
       "pages": [
         "api-reference/introduction"
       ]
-    },
+    }
   ],
   "footerSocials": {
     "x": "https://x.com/mintlify",
