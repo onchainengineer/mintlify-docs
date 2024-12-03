@@ -45,7 +45,7 @@
     "/appearance": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get appearance",
         "operationId": "get-appearance",
@@ -69,7 +69,7 @@
       },
       "put": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update appearance",
         "operationId": "update-appearance",
@@ -164,7 +164,7 @@
     "/applications/reconnecting-pty-signed-token": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Issue signed app token for reconnecting PTY",
         "operationId": "issue-signed-app-token-for-reconnecting-pty",
@@ -745,7 +745,7 @@
     "/entitlements": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get entitlements",
         "operationId": "get-entitlements",
@@ -1082,7 +1082,7 @@
     "/groups": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get groups",
         "operationId": "get-groups",
@@ -1140,7 +1140,7 @@
     "/groups/{group}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get group by ID",
         "operationId": "get-group-by-id",
@@ -1175,7 +1175,7 @@
       },
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete group by name",
         "operationId": "delete-group-by-name",
@@ -1210,7 +1210,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update group by name",
         "operationId": "update-group-by-name",
@@ -1492,7 +1492,7 @@
     "/integrations/jfrog/xray-scan": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get JFrog XRay scan by workspace agent ID.",
         "operationId": "get-jfrog-xray-scan-by-workspace-agent-id",
@@ -1536,7 +1536,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Post JFrog XRay scan by workspace agent ID.",
         "operationId": "post-jfrog-xray-scan-by-workspace-agent-id",
@@ -1574,7 +1574,7 @@
     "/licenses": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get licenses",
         "operationId": "get-licenses",
@@ -1665,7 +1665,7 @@
     "/licenses/{id}": {
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete license",
         "operationId": "delete-license",
@@ -1821,7 +1821,7 @@
     "/notifications/templates/{notification_template}/method": {
       "put": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update notification template dispatch method",
         "operationId": "update-notification-template-dispatch-method",
@@ -1856,7 +1856,7 @@
     "/oauth2-provider/apps": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get OAuth2 applications.",
         "operationId": "get-oauth2-applications",
@@ -1893,7 +1893,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Create OAuth2 application.",
         "operationId": "create-oauth2-application",
@@ -1931,7 +1931,7 @@
     "/oauth2-provider/apps/{app}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get OAuth2 application.",
         "operationId": "get-oauth2-application",
@@ -1966,7 +1966,7 @@
       },
       "put": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update OAuth2 application.",
         "operationId": "update-oauth2-application",
@@ -2013,7 +2013,7 @@
       },
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete OAuth2 application.",
         "operationId": "delete-oauth2-application",
@@ -2044,7 +2044,7 @@
     "/oauth2-provider/apps/{app}/secrets": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get OAuth2 application secrets.",
         "operationId": "get-oauth2-application-secrets",
@@ -2082,7 +2082,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Create OAuth2 application secret.",
         "operationId": "create-oauth2-application-secret",
@@ -2122,7 +2122,7 @@
     "/oauth2-provider/apps/{app}/secrets/{secretID}": {
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete OAuth2 application secret.",
         "operationId": "delete-oauth2-application-secret",
@@ -2162,7 +2162,7 @@
     "/oauth2/authorize": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "OAuth2 authorization request.",
         "operationId": "oauth2-authorization-request",
@@ -2230,7 +2230,7 @@
     "/oauth2/tokens": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "OAuth2 token exchange.",
         "operationId": "oauth2-token-exchange",
@@ -2288,7 +2288,7 @@
       },
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete OAuth2 application tokens.",
         "operationId": "delete-oauth2-application-tokens",
@@ -2504,7 +2504,7 @@
     "/organizations/{organization}/groups": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get groups by organization",
         "operationId": "get-groups-by-organization",
@@ -2543,7 +2543,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Create group for organization",
         "operationId": "create-group-for-organization",
@@ -2592,7 +2592,7 @@
     "/organizations/{organization}/groups/{groupName}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get group by organization and group name",
         "operationId": "get-group-by-organization-and-group-name",
@@ -3014,7 +3014,7 @@
     "/organizations/{organization}/members/{user}/workspace-quota": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get workspace quota by user",
         "operationId": "get-workspace-quota-by-user",
@@ -3122,7 +3122,7 @@
     "/organizations/{organization}/provisionerdaemons": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get provisioner daemons",
         "operationId": "get-provisioner-daemons",
@@ -3171,7 +3171,7 @@
     "/organizations/{organization}/provisionerdaemons/serve": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Serve provisioner daemon",
         "operationId": "serve-provisioner-daemon",
@@ -3203,7 +3203,7 @@
     "/organizations/{organization}/provisionerkeys": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "List provisioner key",
         "operationId": "list-provisioner-key",
@@ -3241,7 +3241,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Create provisioner key",
         "operationId": "create-provisioner-key",
@@ -3278,7 +3278,7 @@
     "/organizations/{organization}/provisionerkeys/daemons": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "List provisioner key daemons",
         "operationId": "list-provisioner-key-daemons",
@@ -3318,7 +3318,7 @@
     "/organizations/{organization}/provisionerkeys/{provisionerkey}": {
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete provisioner key",
         "operationId": "delete-provisioner-key",
@@ -3358,7 +3358,7 @@
     "/organizations/{organization}/settings/idpsync/available-fields": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get the available organization idp sync claim fields",
         "operationId": "get-the-available-organization-idp-sync-claim-fields",
@@ -3399,7 +3399,7 @@
     "/organizations/{organization}/settings/idpsync/groups": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get group IdP Sync settings by organization",
         "operationId": "get-group-idp-sync-settings-by-organization",
@@ -3435,7 +3435,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update group IdP Sync settings by organization",
         "operationId": "update-group-idp-sync-settings-by-organization",
@@ -3485,7 +3485,7 @@
     "/organizations/{organization}/settings/idpsync/roles": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get role IdP Sync settings by organization",
         "operationId": "get-role-idp-sync-settings-by-organization",
@@ -3521,7 +3521,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update role IdP Sync settings by organization",
         "operationId": "update-role-idp-sync-settings-by-organization",
@@ -3910,7 +3910,7 @@
     "/provisionerkeys/{provisionerkey}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Fetch provisioner key details",
         "operationId": "fetch-provisioner-key-details",
@@ -3973,7 +3973,7 @@
     "/replicas": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get active replicas",
         "operationId": "get-active-replicas",
@@ -4002,7 +4002,7 @@
     "/scim/v2/ServiceProviderConfig": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "SCIM 2.0: Service Provider Config",
         "operationId": "scim-get-service-provider-config",
@@ -4017,7 +4017,7 @@
     "/scim/v2/Users": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "SCIM 2.0: Get users",
         "operationId": "scim-get-users",
@@ -4035,7 +4035,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "SCIM 2.0: Create new user",
         "operationId": "scim-create-new-user",
@@ -4073,7 +4073,7 @@
     "/scim/v2/Users/{id}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "SCIM 2.0: Get user by ID",
         "operationId": "scim-get-user-by-id",
@@ -4103,7 +4103,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "SCIM 2.0: Update user account",
         "operationId": "scim-update-user-status",
@@ -4153,7 +4153,7 @@
     "/settings/idpsync/available-fields": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get the available idp sync claim fields",
         "operationId": "get-the-available-idp-sync-claim-fields",
@@ -4194,7 +4194,7 @@
     "/settings/idpsync/organization": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get organization IdP Sync settings",
         "operationId": "get-organization-idp-sync-settings",
@@ -4218,7 +4218,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update organization IdP Sync settings",
         "operationId": "update-organization-idp-sync-settings",
@@ -4444,7 +4444,7 @@
     "/templates/{template}/acl": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get template ACLs",
         "operationId": "get-template-acls",
@@ -4483,7 +4483,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update template ACL",
         "operationId": "update-template-acl",
@@ -4533,7 +4533,7 @@
     "/templates/{template}/acl/available": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get template available acl users/groups",
         "operationId": "get-template-available-acl-usersgroups",
@@ -6957,7 +6957,7 @@
     "/users/{user}/quiet-hours": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get user quiet hours schedule",
         "operationId": "get-user-quiet-hours-schedule",
@@ -6996,7 +6996,7 @@
       },
       "put": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update user quiet hours schedule",
         "operationId": "update-user-quiet-hours-schedule",
@@ -7367,7 +7367,7 @@
     "/workspace-quota/{user}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get workspace quota by user deprecated",
         "operationId": "get-workspace-quota-by-user-deprecated",
@@ -8434,7 +8434,7 @@
     "/workspaceproxies": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get workspace proxies",
         "operationId": "get-workspace-proxies",
@@ -8461,7 +8461,7 @@
       },
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Create workspace proxy",
         "operationId": "create-workspace-proxy",
@@ -8499,7 +8499,7 @@
     "/workspaceproxies/me/app-stats": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Report workspace app stats",
         "operationId": "report-workspace-app-stats",
@@ -8534,7 +8534,7 @@
     "/workspaceproxies/me/coordinate": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Workspace Proxy Coordinate",
         "operationId": "workspace-proxy-coordinate",
@@ -8557,7 +8557,7 @@
     "/workspaceproxies/me/crypto-keys": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get workspace proxy crypto keys",
         "operationId": "get-workspace-proxy-crypto-keys",
@@ -8597,7 +8597,7 @@
     "/workspaceproxies/me/deregister": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Deregister workspace proxy",
         "operationId": "deregister-workspace-proxy",
@@ -8632,7 +8632,7 @@
     "/workspaceproxies/me/issue-signed-app-token": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Issue signed workspace app token",
         "operationId": "issue-signed-workspace-app-token",
@@ -8673,7 +8673,7 @@
     "/workspaceproxies/me/register": {
       "post": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Register workspace proxy",
         "operationId": "register-workspace-proxy",
@@ -8714,7 +8714,7 @@
     "/workspaceproxies/{workspaceproxy}": {
       "get": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Get workspace proxy",
         "operationId": "get-workspace-proxy",
@@ -8750,7 +8750,7 @@
       },
       "delete": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Delete workspace proxy",
         "operationId": "delete-workspace-proxy",
@@ -8786,7 +8786,7 @@
       },
       "patch": {
         "tags": [
-          "Enterprise"
+          "TBD"
         ],
         "summary": "Update workspace proxy",
         "operationId": "update-workspace-proxy",
@@ -10632,11 +10632,11 @@
           },
           "allow_user_autostart": {
             "type": "boolean",
-            "description": "AllowUserAutostart allows users to set a schedule for autostarting their\nworkspace. By default this is true. This can only be disabled when using\nan enterprise license."
+            "description": "AllowUserAutostart allows users to set a schedule for autostarting their\nworkspace. By default this is true. This can only be disabled when using\nan TBD license."
           },
           "allow_user_autostop": {
             "type": "boolean",
-            "description": "AllowUserAutostop allows users to set a custom workspace TTL to use in\nplace of the template's DefaultTTL field. By default this is true. If\nfalse, the DefaultTTL will always be used. This can only be disabled when\nusing an enterprise license."
+            "description": "AllowUserAutostop allows users to set a custom workspace TTL to use in\nplace of the template's DefaultTTL field. By default this is true. If\nfalse, the DefaultTTL will always be used. This can only be disabled when\nusing an TBD license."
           },
           "allow_user_cancel_workspace_jobs": {
             "type": "boolean",
@@ -10644,7 +10644,7 @@
           },
           "autostart_requirement": {
             "type": "object",
-            "description": "AutostartRequirement allows optionally specifying the autostart allowed days\nfor workspaces created from this template. This is an enterprise feature.",
+            "description": "AutostartRequirement allows optionally specifying the autostart allowed days\nfor workspaces created from this template. This is an TBD feature.",
             "allOf": [
               {
                 "$ref": "#/components/schemas/wirtualsdk.TemplateAutostartRequirement"
@@ -10653,7 +10653,7 @@
           },
           "autostop_requirement": {
             "type": "object",
-            "description": "AutostopRequirement allows optionally specifying the autostop requirement\nfor workspaces created from this template. This is an enterprise feature.",
+            "description": "AutostopRequirement allows optionally specifying the autostop requirement\nfor workspaces created from this template. This is an TBD feature.",
             "allOf": [
               {
                 "$ref": "#/components/schemas/wirtualsdk.TemplateAutostopRequirement"
@@ -12431,7 +12431,7 @@
           "client_secret": {
             "type": "string"
           },
-          "enterprise_base_url": {
+          "TBD_base_url": {
             "type": "string"
           }
         }
@@ -13818,7 +13818,7 @@
           },
           "allow_user_autostart": {
             "type": "boolean",
-            "description": "AllowUserAutostart and AllowUserAutostop are enterprise-only. Their\nvalues are only used if your license is entitled to use the advanced\ntemplate scheduling feature."
+            "description": "AllowUserAutostart and AllowUserAutostop are TBD-only. Their\nvalues are only used if your license is entitled to use the advanced\ntemplate scheduling feature."
           },
           "allow_user_autostop": {
             "type": "boolean"
@@ -13831,7 +13831,7 @@
           },
           "autostop_requirement": {
             "type": "object",
-            "description": "AutostopRequirement and AutostartRequirement are enterprise features. Its\nvalue is only used if your license is entitled to use the advanced template\nscheduling feature.",
+            "description": "AutostopRequirement and AutostartRequirement are TBD features. Its\nvalue is only used if your license is entitled to use the advanced template\nscheduling feature.",
             "allOf": [
               {
                 "$ref": "#/components/schemas/wirtualsdk.TemplateAutostopRequirement"
@@ -13869,7 +13869,7 @@
           },
           "failure_ttl_ms": {
             "type": "integer",
-            "description": "FailureTTLMillis, TimeTilDormantMillis, and TimeTilDormantAutoDeleteMillis are enterprise-only. Their\nvalues are used if your license is entitled to use the advanced\ntemplate scheduling feature."
+            "description": "FailureTTLMillis, TimeTilDormantMillis, and TimeTilDormantAutoDeleteMillis are TBD-only. Their\nvalues are used if your license is entitled to use the advanced\ntemplate scheduling feature."
           },
           "icon": {
             "type": "string"
