@@ -31,17 +31,25 @@
       "url": "docs"
     },
     {
+      "name": "Cookbook",
+      "url": "cookbook"
+    },
+    {
+      "name": "Demo Recordings",
+      "url": "demo"
+    },
+    {
+      "name": "Environment Templates",
+      "url": "environment-templates"
+    },
+    {
       "name": "API Reference",
       "url": "api-reference",
       "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/main/api-reference/openapi.json"
     },
     {
-      "name": "Live Demo",
-      "url": "live-demo"
-    },
-    {
-      "name": "Cookbook",
-      "url": "cookbook"
+      "name": "SDK Reference",
+      "url": "sdk-reference"
     }
   ],
   "anchors": [
@@ -78,11 +86,33 @@
       ]
     },
     {
+      "group": "SDK Documentation",
+      "pages": [
+        "sdk-reference/introduction"
+      ]
+    },
+    {
       "group": "Cookbook",
       "pages": [
-        "cookbook/introduction",
-        "cookbook/examples",
-        "cookbook/best-practices"
+        "cookbook/introduction"
+      ]
+    },
+    {
+      "group": "Demo Recordings",
+      "pages": [
+        "demo/introduction"
+      ]
+    },
+    {
+      "group": "The Wirtual Desktop",
+      "pages": [
+        "the-wirtual-desktop/introduction"
+      ]
+    },
+    {
+      "group": "Environment Templates",
+      "pages": [
+        "environment-templates/introduction"
       ]
     }
   ],
