@@ -63,20 +63,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "introduction"
       ]
     },
     {
@@ -101,12 +88,6 @@
       "group": "Demo Recordings",
       "pages": [
         "demo-recordings/introduction"
-      ]
-    },
-    {
-      "group": "The Wirtual Desktop",
-      "pages": [
-        "the-wirtual-desktop/introduction"
       ]
     },
     {
