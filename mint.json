@@ -36,7 +36,7 @@
     },
     {
       "name": "Demo Recordings",
-      "url": "demo"
+      "url": "demo-recordings"
     },
     {
       "name": "Environment Templates",
@@ -100,7 +100,7 @@
     {
       "group": "Demo Recordings",
       "pages": [
-        "demo/introduction"
+        "demo-recordings/introduction"
       ]
     },
     {
