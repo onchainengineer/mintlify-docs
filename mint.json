@@ -2,13 +2,13 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Wirtual.dev",
   "logo": {
-    "dark": "/logo/dark.svg",
+    "dark": "/logo/dark.svg",  
     "light": "/logo/light.svg"
   },
   "favicon": "/wirtual.svg",
   "colors": {
     "primary": "#0D9373",
-    "light": "#07C983",
+    "light": "#07C983", 
     "dark": "#0D9373",
     "anchors": {
       "from": "#0D9373",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Cookbook",
-      "url": "cookbook"
+      "url": "cookbook"  
     },
     {
       "name": "Demo Recordings",
@@ -48,8 +48,12 @@
       "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/main/api-reference/openapi.json"
     },
     {
-      "name": "SDK Reference",
+      "name": "SDK Reference", 
       "url": "sdk-reference"
+    },
+    {
+      "name": "CLI Reference",
+      "url": "cli-reference"
     }
   ],
   "anchors": [
@@ -73,9 +77,242 @@
       ]
     },
     {
-      "group": "SDK Documentation",
+      "group": "SDK Documentation", 
       "pages": [
         "sdk-reference/introduction"
+      ]
+    },
+    {
+      "group": "CLI Documentation",
+      "pages": [
+        "cli-reference/introduction",
+        "cli-reference/autoupdate",
+        "cli-reference/completion",
+        "cli-reference/config-ssh",
+        "cli-reference/create",
+        "cli-reference/delete",
+        "cli-reference/dotfiles",
+        {
+          "group": "External Auth",
+          "pages": [
+            "cli-reference/external-auth",
+            "cli-reference/external-auth_access-token"
+          ]
+        },
+        "cli-reference/favorite",
+        {
+          "group": "Features",
+          "pages": [
+            "cli-reference/features",
+            "cli-reference/features_list"
+          ]
+        },
+        {
+          "group": "Groups",
+          "pages": [
+            "cli-reference/groups",
+            "cli-reference/groups_create", 
+            "cli-reference/groups_delete",
+            "cli-reference/groups_edit",
+            "cli-reference/groups_list"
+          ]
+        },
+        {
+          "group": "Licenses",
+          "pages": [
+            "cli-reference/licenses",
+            "cli-reference/licenses_add",
+            "cli-reference/licenses_delete",
+            "cli-reference/licenses_list"
+          ]
+        },
+        "cli-reference/list",
+        "cli-reference/login",
+        "cli-reference/logout", 
+        "cli-reference/netcheck",
+        {
+          "group": "Notifications",
+          "pages": [
+            "cli-reference/notifications",
+            "cli-reference/notifications_pause",
+            "cli-reference/notifications_resume"
+          ]
+        },
+        {
+          "group": "Open",
+          "pages": [
+            "cli-reference/open",
+            "cli-reference/open_vscode"
+          ]
+        },
+        {
+          "group": "Organizations",
+          "pages": [
+            "cli-reference/organizations",
+            "cli-reference/organizations_create",
+            "cli-reference/organizations_show",
+            {
+              "group": "Members",
+              "pages": [
+                "cli-reference/organizations_members",
+                "cli-reference/organizations_members_add",
+                "cli-reference/organizations_members_edit-roles",
+                "cli-reference/organizations_members_list",
+                "cli-reference/organizations_members_remove"
+              ]
+            },
+            {
+              "group": "Roles",
+              "pages": [
+                "cli-reference/organizations_roles",
+                "cli-reference/organizations_roles_edit",
+                "cli-reference/organizations_roles_show"
+              ]
+            },
+            {
+              "group": "Settings",
+              "pages": [
+                "cli-reference/organizations_settings",
+                "cli-reference/organizations_settings_set",
+                "cli-reference/organizations_settings_set_group-sync",
+                "cli-reference/organizations_settings_set_organization-sync",
+                "cli-reference/organizations_settings_set_role-sync",
+                "cli-reference/organizations_settings_show",
+                "cli-reference/organizations_settings_show_group-sync",
+                "cli-reference/organizations_settings_show_organization-sync",
+                "cli-reference/organizations_settings_show_role-sync"
+              ]
+            }
+          ]
+        },
+        "cli-reference/ping",
+        "cli-reference/port-forward",
+        {
+          "group": "Provisioner",
+          "pages": [
+            "cli-reference/provisioner",
+            "cli-reference/provisioner_start",
+            {
+              "group": "Keys",
+              "pages": [
+                "cli-reference/provisioner_keys",
+                "cli-reference/provisioner_keys_create",
+                "cli-reference/provisioner_keys_delete",
+                "cli-reference/provisioner_keys_list"
+              ]
+            }
+          ]
+        },
+        "cli-reference/publickey",
+        "cli-reference/rename",
+        "cli-reference/reset-password",
+        "cli-reference/restart",
+        {
+          "group": "Schedule",
+          "pages": [
+            "cli-reference/schedule",
+            "cli-reference/schedule_override-stop",
+            "cli-reference/schedule_show",
+            "cli-reference/schedule_start", 
+            "cli-reference/schedule_stop"
+          ]
+        },
+        {
+          "group": "Server",
+          "pages": [
+            "cli-reference/server",
+            "cli-reference/server_create-admin-user",
+            {
+              "group": "Database Encryption",
+              "pages": [
+                "cli-reference/server_dbcrypt",
+                "cli-reference/server_dbcrypt_decrypt",
+                "cli-reference/server_dbcrypt_delete",
+                "cli-reference/server_dbcrypt_rotate"
+              ]
+            },
+            "cli-reference/server_postgres-builtin-serve",
+            "cli-reference/server_postgres-builtin-url"
+          ]
+        },
+        "cli-reference/show",
+        "cli-reference/speedtest",
+        "cli-reference/ssh",
+        "cli-reference/start",
+        {
+          "group": "Statistics",
+          "pages": [
+            "cli-reference/stat",
+            "cli-reference/stat_cpu",
+            "cli-reference/stat_disk",
+            "cli-reference/stat_mem"
+          ]
+        },
+        {
+          "group": "State",
+          "pages": [
+            "cli-reference/state",
+            "cli-reference/state_pull",
+            "cli-reference/state_push"
+          ]
+        },
+        "cli-reference/stop",
+        {
+          "group": "Support",
+          "pages": [
+            "cli-reference/support",
+            "cli-reference/support_bundle"
+          ]
+        },
+        {
+          "group": "Templates",
+          "pages": [
+            "cli-reference/templates",
+            "cli-reference/templates_archive",
+            "cli-reference/templates_create",
+            "cli-reference/templates_delete",
+            "cli-reference/templates_edit",
+            "cli-reference/templates_init",
+            "cli-reference/templates_list",
+            "cli-reference/templates_pull",
+            "cli-reference/templates_push",
+            {
+              "group": "Versions",
+              "pages": [
+                "cli-reference/templates_versions",
+                "cli-reference/templates_versions_archive",
+                "cli-reference/templates_versions_list",
+                "cli-reference/templates_versions_promote",
+                "cli-reference/templates_versions_unarchive"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Tokens",
+          "pages": [
+            "cli-reference/tokens",
+            "cli-reference/tokens_create",
+            "cli-reference/tokens_list",
+            "cli-reference/tokens_remove"
+          ]
+        },
+        "cli-reference/unfavorite",
+        "cli-reference/update",
+        {
+          "group": "Users",
+          "pages": [
+            "cli-reference/users",
+            "cli-reference/users_activate",
+            "cli-reference/users_create",
+            "cli-reference/users_delete",
+            "cli-reference/users_list",
+            "cli-reference/users_show",
+            "cli-reference/users_suspend"
+          ]
+        },
+        "cli-reference/version",
+        "cli-reference/whoami"
       ]
     },
     {
@@ -93,7 +330,7 @@
     {
       "group": "Environment Templates",
       "pages": [
-        "environment-templates/introduction"
+        "environment-templates/introduction"  
       ]
     }
   ],
@@ -108,4 +345,4 @@
       "method": "key"
     }
   }
-}
+ }
