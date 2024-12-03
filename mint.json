@@ -32,6 +32,12 @@
       "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/main/api-reference/openapi.json"
     }
   ],
+  "tabs": [
+    {
+      "name": "Live Demo",
+      "url": "live-demo",
+    }
+  ],
   "anchors": [
     {
       "name": "Documentation",
