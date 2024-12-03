@@ -23,26 +23,32 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://wirtual.e3.cloud.visca.dev"
   },
   "tabs": [
+    {
+      "name": "Documentation",
+      "url": "docs"
+    },
     {
       "name": "API Reference",
       "url": "api-reference",
       "openapi": "https://raw.githubusercontent.com/onchainengineer/mintlify-docs/main/api-reference/openapi.json"
-    }
-  ],
-  "tabs": [
+    },
     {
       "name": "Live Demo",
-      "url": "live-demo",
+      "url": "live-demo"
+    },
+    {
+      "name": "Cookbook",
+      "url": "cookbook"
     }
   ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.wirtual.dev"
     }
   ],
   "navigation": [
@@ -69,6 +75,14 @@
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Cookbook",
+      "pages": [
+        "cookbook/introduction",
+        "cookbook/examples",
+        "cookbook/best-practices"
       ]
     }
   ],
