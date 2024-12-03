@@ -75,7 +75,7 @@ wirtual — A tool for provisioning self-hosted development environments with Te
 |             |                         |
 | ----------- | ----------------------- |
 | Type        | <code>url</code>        |
-| Environment | <code>$CODER_URL</code> |
+| Environment | <code>$WIRTUAL_URL</code> |
 
 URL to a deployment.
 
@@ -92,16 +92,16 @@ Print all options, how they're set, then exit.
 |             |                                   |
 | ----------- | --------------------------------- |
 | Type        | <code>string</code>               |
-| Environment | <code>$CODER_SESSION_TOKEN</code> |
+| Environment | <code>$WIRTUAL_SESSION_TOKEN</code> |
 
-Specify an authentication token. For security reasons setting CODER_SESSION_TOKEN is preferred.
+Specify an authentication token. For security reasons setting WIRTUAL_SESSION_TOKEN is preferred.
 
 ### --no-version-warning
 
 |             |                                        |
 | ----------- | -------------------------------------- |
 | Type        | <code>bool</code>                      |
-| Environment | <code>$CODER_NO_VERSION_WARNING</code> |
+| Environment | <code>$WIRTUAL_NO_VERSION_WARNING</code> |
 
 Suppress warning when client and server versions do not match.
 
@@ -110,7 +110,7 @@ Suppress warning when client and server versions do not match.
 |             |                                        |
 | ----------- | -------------------------------------- |
 | Type        | <code>bool</code>                      |
-| Environment | <code>$CODER_NO_FEATURE_WARNING</code> |
+| Environment | <code>$WIRTUAL_NO_FEATURE_WARNING</code> |
 
 Suppress warnings about unlicensed features.
 
@@ -119,7 +119,7 @@ Suppress warnings about unlicensed features.
 |             |                            |
 | ----------- | -------------------------- |
 | Type        | <code>string-array</code>  |
-| Environment | <code>$CODER_HEADER</code> |
+| Environment | <code>$WIRTUAL_HEADER</code> |
 
 Additional HTTP headers added to all requests. Provide as key=value. Can be specified multiple times.
 
@@ -128,7 +128,7 @@ Additional HTTP headers added to all requests. Provide as key=value. Can be spec
 |             |                                    |
 | ----------- | ---------------------------------- |
 | Type        | <code>string</code>                |
-| Environment | <code>$CODER_HEADER_COMMAND</code> |
+| Environment | <code>$WIRTUAL_HEADER_COMMAND</code> |
 
 An external command that outputs additional HTTP headers added to all requests. The command must output each header as `key=value` on its own line.
 
@@ -137,7 +137,7 @@ An external command that outputs additional HTTP headers added to all requests. 
 |             |                             |
 | ----------- | --------------------------- |
 | Type        | <code>bool</code>           |
-| Environment | <code>$CODER_VERBOSE</code> |
+| Environment | <code>$WIRTUAL_VERBOSE</code> |
 
 Enable verbose output.
 
@@ -146,7 +146,7 @@ Enable verbose output.
 |             |                                                |
 | ----------- | ---------------------------------------------- |
 | Type        | <code>bool</code>                              |
-| Environment | <code>$CODER_DISABLE_DIRECT_CONNECTIONS</code> |
+| Environment | <code>$WIRTUAL_DISABLE_DIRECT_CONNECTIONS</code> |
 
 Disable direct (P2P) connections to workspaces.
 
@@ -155,16 +155,16 @@ Disable direct (P2P) connections to workspaces.
 |             |                                               |
 | ----------- | --------------------------------------------- |
 | Type        | <code>bool</code>                             |
-| Environment | <code>$CODER_DISABLE_NETWORK_TELEMETRY</code> |
+| Environment | <code>$WIRTUAL_DISABLE_NETWORK_TELEMETRY</code> |
 
-Disable network telemetry. Network telemetry is collected when connecting to workspaces using the CLI, and is forwarded to the server. If telemetry is also enabled on the server, it may be sent to Coder. Network telemetry is used to measure network quality and detect regressions.
+Disable network telemetry. Network telemetry is collected when connecting to workspaces using the CLI, and is forwarded to the server. If telemetry is also enabled on the server, it may be sent to Wirtual. Network telemetry is used to measure network quality and detect regressions.
 
 ### --global-config
 
 |             |                                |
 | ----------- | ------------------------------ |
 | Type        | <code>string</code>            |
-| Environment | <code>$CODER_CONFIG_DIR</code> |
+| Environment | <code>$WIRTUAL_CONFIG_DIR</code> |
 | Default     | <code>~/.config/coderv2</code> |
 
 Path to the global `coder` config directory.
