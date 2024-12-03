@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:hi@wirtual.dev"
     }
   ],
   "topbarCtaButton": {
@@ -67,8 +67,17 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/wirtual-ai",
+    "github": "https://github.com/wirtual-ai",
+    "linkedin": "https://linkedin.com/company/wirtual-ai"
+  },
+{
+  "api": {
+    "baseUrl": "https://wirtual.e3.cloud.visca.dev/api", 
+    "auth": {
+      "method": "bearer" // options: bearer, basic, key.
+    }
   }
+}
+
 }
