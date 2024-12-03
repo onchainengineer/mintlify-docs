@@ -48,7 +48,7 @@ Specifies the wildcard hostname to use for workspace applications in the form "\
 | Type        | <code>url</code>                    |
 | Environment | <code>$WIRTUAL_DOCS_URL</code>        |
 | YAML        | <code>networking.docsURL</code>     |
-| Default     | <code>https://coder.com/docs</code> |
+| Default     | <code>https://docs.wirtual.dev</code> |
 
 Specifies the custom docs URL.
 
@@ -937,9 +937,9 @@ Origin addresses to respect "proxy-trusted-headers". e.g. 192.168.1.0/24.
 | Type        | <code>string</code>                 |
 | Environment | <code>$WIRTUAL_CACHE_DIRECTORY</code> |
 | YAML        | <code>cacheDir</code>               |
-| Default     | <code>~/.cache/coder</code>         |
+| Default     | <code>~/.cache/wirtual</code>         |
 
-The directory to cache temporary files. If unspecified and $CACHE_DIRECTORY is set, it will be used for compatibility with systemd. This directory is NOT safe to be configured as a shared directory across coderd/provisionerd replicas.
+The directory to cache temporary files. If unspecified and $CACHE_DIRECTORY is set, it will be used for compatibility with systemd. This directory is NOT safe to be configured as a shared directory across wirtuald/provisionerd replicas.
 
 ### --postgres-url
 
@@ -1108,7 +1108,7 @@ Specify a YAML file to load configuration from.
 | Type        | <code>string</code>                     |
 | Environment | <code>$WIRTUAL_SSH_HOSTNAME_PREFIX</code> |
 | YAML        | <code>client.sshHostnamePrefix</code>   |
-| Default     | <code>coder.</code>                     |
+| Default     | <code>wirtual.</code>                     |
 
 The SSH deployment prefix is used in the Host of the ssh config.
 
@@ -1130,7 +1130,7 @@ These SSH config options will override the default SSH config options. Provide o
 | Environment | <code>$WIRTUAL_CLI_UPGRADE_MESSAGE</code> |
 | YAML        | <code>client.cliUpgradeMessage</code>   |
 
-The upgrade message to display to users when a client/server mismatch is detected. By default it instructs users to update using 'curl -L https://coder.com/install.sh | sh'.
+The upgrade message to display to users when a client/server mismatch is detected. By default it instructs users to update using 'curl -L https://wirtual.dev/install.sh | sh'.
 
 ### --write-config
 
@@ -1144,7 +1144,7 @@ The upgrade message to display to users when a client/server mismatch is detecte
 
 |             |                                            |
 | ----------- | ------------------------------------------ |
-| Type        | <code>struct[[]codersdk.LinkConfig]</code> |
+| Type        | <code>struct[[]wirtualsdk.LinkConfig]</code> |
 | Environment | <code>$WIRTUAL_SUPPORT_LINKS</code>          |
 | YAML        | <code>supportLinks</code>                  |
 
@@ -1159,7 +1159,7 @@ Support links to display in the top right drop down menu.
 | YAML        | <code>networking.http.proxyHealthInterval</code> |
 | Default     | <code>1m0s</code>                                |
 
-The interval in which coderd should be checking the status of workspace proxies.
+The interval in which wirtuald should be checking the status of workspace proxies.
 
 ### --default-quiet-hours-schedule
 
