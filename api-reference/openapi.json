@@ -14,7 +14,7 @@ info:
     url: https://github.com/wirtualdev/wirtualdev/blob/main/LICENSE
   version: "2.0"
 servers:
-- url: /api/v2
+- url: https://wirtual.e4.cloud.visca.dev/api/v2
 paths:
   /:
     get:
