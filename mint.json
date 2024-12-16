@@ -340,7 +340,7 @@
     "linkedin": "https://linkedin.com/company/wirtual-ai"
   },
   "api": {
-    "baseUrl": "https://wirtual.e4.cloud.visca.dev/api",
+    "baseUrl": "https://wirtual.e4.cloud.visca.dev/api/v2",
     "auth": {
       "method": "key"
     }
