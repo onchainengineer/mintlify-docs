@@ -1,191 +1,25 @@
 ---
 title: 'Welcome to Wirtual'
-description: 'Workstations for the Next Billion AI Agents'
+description: 'Personal Computers for the Next Billion AI Agents'
 ---
 
 # Workstations for AI Agents
 
-The personal computer revolution gave every human the power to run software. Now, as AI agents become increasingly capable, they need their own workstations to operate in. Wirtual gives every AI agent its own secure workstation, enabling the next wave of AI automation.
+Just as personal computers gave humans the power to interact with software, Wirtual gives AI agents their own secure workstations to operate in. We're enabling the next billion AI agents by giving each one its own personal computer.
 
 <Callout type="warning">
   Don't run AI agents on your local machine. Every AI agent deserves its own secure, isolated workstation.
 </Callout>
 
-## Why AI Needs Workstations
+## The Missing Piece for AI
 
-Today's AI agents can write code, analyze data, and handle complex tasks. But they're missing something crucial: their own workstations to operate in. Currently, developers must choose between:
+Today's AI agents are becoming remarkably capable - they can write code, analyze data, and handle complex tasks. But they're missing something crucial: their own computers to work on. Currently, developers must choose between limiting their agents to APIs, risking unstable browser automation, or endangering their local machines.
 
-* Limiting their agents to APIs (restricted functionality)
-
-* Using unstable browser automation (unreliable)
-
-* Running on local machines (dangerous)
-
-Wirtual solves this by giving each AI agent its own secure workstation where it can safely operate real software.
-
-## How It Works
-
-Creating a workstation for your AI agent is straightforward:
-
-```hcl
-# Define a workstation for a sales agent
-resource "workstation" "sales_agent" {
-  name     = "sales-automation"
-  image    = "windows-base"    # Windows environment
-  
-  resources {
-    cpu    = 2
-    memory = "4GB"
-  }
-
-  applications = [
-    "crm",      # Sales CRM access
-    "browser",  # Web access
-    "office"    # Document handling
-  ]
-
-  security {
-    isolation = "strict"
-    monitoring = "enabled"
-  }
-}
-```
-
-Your AI agent can then work safely in its dedicated environment:
-
-```python
-from your_agent import SalesAgent
-
-# Your AI agent logic
-def automate_sales():
-    update_leads()
-    send_follow_ups()
-    update_crm()
-
-# Safely execute in isolated workstation
-agent = SalesAgent(workstation="sales-automation")
-agent.run(automate_sales)
-```
-
-## Real-World Applications
-
-### Sales Automation
-
-Your AI sales assistant gets its own workstation to:
-
-* Find and research prospects
-
-* Update CRM records
-
-* Send follow-up emails
-
-* Schedule meetings
-
-### Market Research
-
-Give your research agent a dedicated workstation to:
-
-* Browse news sites
-
-* Create summary reports
-
-* Update dashboards
-
-* Track competitors
-
-### Healthcare Administration
-
-Your admin agent gets a secure workspace to:
-
-* Process insurance forms
-
-* Manage patient records
-
-* Update ERP systems
-
-* Schedule appointments
-
-## Secure by Design
-
-Every Wirtual workstation provides:
-
-```hcl
-# Security built into every workstation
-security {
-  isolation    = "strict"     # Complete process isolation
-  networking   = "controlled" # Restricted network access
-  monitoring   = "full"       # Comprehensive activity logs
-  compliance   = "enabled"    # Audit trail for all actions
-}
-```
-
-## Resource Smart
-
-Workstations automatically manage their resources:
-
-```hcl
-# Efficient resource management
-resources {
-  scaling {
-    min_instances = 1
-    max_instances = 10
-    auto_scale    = true
-  }
-  
-  limits {
-    cpu_max    = 4
-    memory_max = "8GB"
-  }
-}
-```
-
-## Your Tools, Your Way
-
-Manage AI workstations with your preferred tools:
-
-* VS Code
-
-* JetBrains IDEs
-
-* Vim/Emacs
-
-* Access via HTTPS or SSH
-
-## Getting Started
-
-<Cards>
-  <Card title="Quick Start" href="/quickstart">
-    Create your first AI workstation
-  </Card>
-
-  <Card title="Guides" href="/guides">
-    Best practices and tutorials
-  </Card>
-
-  <Card title="Examples" href="/examples">
-    Real-world configurations
-  </Card>
-</Cards>
-
-## Core Concepts
-
-Understanding Wirtual means understanding a few key ideas:
-
-1. **Every Agent Gets Its Own Workstation**: Just as humans need their own workspace, AI agents need their own secure workstations.
-
-2. **Complete Safety**: Each workstation is isolated, protecting both the agent and your systems.
-
-3. **Real Software Support**: Agents can use any Windows or Linux software directly.
-
-4. **Smart Resource Use**: Workstations manage their own resources efficiently.
-
-<Callout type="info">
-  Ready to give your AI agent its own workstation? Continue to our Quick Start guide to create your first one.
-</Callout>
+Wirtual solves this by giving each AI agent its own secure workstation where it can safely operate real software, just like humans do with their PCs.
 
 ## Join Us
 
-Be part of giving the next billion AI agents their own workstations:
+Be part of giving the next billion AI agents their own computers:
 
 <Cards>
   <Card title="Quick Start Guide" href="/docs/quickstart">

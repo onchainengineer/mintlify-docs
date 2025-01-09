@@ -1,0 +1,44 @@
+---
+title: 'How It Works'
+description: 'Creating a workstation for your AI agent is as simple as defining what it needs.'
+---
+
+```hcl
+# Define a workstation for a sales agent
+resource "workstation" "sales_agent" {
+  name     = "sales-automation"
+  image    = "windows-base"    # Windows environment
+  
+  resources {
+    cpu    = 2
+    memory = "4GB"
+  }
+
+  applications = [
+    "crm",      # Sales CRM access
+    "browser",  # Web access
+    "office"    # Document handling
+  ]
+
+  security {
+    isolation = "strict"
+    monitoring = "enabled"
+  }
+}
+```
+
+Your AI agent can then work safely in its own environment:
+
+```python
+from your_agent import SalesAgent
+
+# Your AI agent logic
+def automate_sales():
+    update_leads()
+    send_follow_ups()
+    update_crm()
+
+# Safely execute in isolated workstation
+agent = SalesAgent(workstation="sales-automation")
+agent.run(automate_sales)
+```
