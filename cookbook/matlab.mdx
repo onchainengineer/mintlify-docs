@@ -1,0 +1,89 @@
+```mdx
+---
+title: 'MATLAB Cookbook'
+description: 'Running MATLAB in Wirtual Workstations'
+---
+
+import { Callout } from 'nextra/components'
+
+# MATLAB in Wirtual Workstations
+
+Define a MATLAB workstation using Terraform:
+
+```hcl
+resource "workstation" "matlab_workspace" {
+  name  = "engineering-matlab"
+  image = "windows-matlab-2023a"
+  
+  resources {
+    cpu    = 4
+    memory = "16GB"
+    gpu    = true
+  }
+
+  security {
+    isolation = "strict"
+  }
+
+  environment {
+    matlab_license = var.license_key
+    matlab_toolboxes = [
+      "signal_toolbox",
+      "image_toolbox",
+      "statistics_toolbox"
+    ]
+  }
+}
+```
+
+## Basic Usage
+
+Once provisioned, AI agents can control MATLAB through natural interactions:
+
+```python
+from wirtual import WorkstationAgent
+
+class MatlabAnalysis(WorkstationAgent):
+    def process_data(self, data_file):
+        # Start MATLAB application
+        self.launch_matlab()
+        
+        # Load and analyze data
+        self.enter_command(f"data = load('{data_file}')")
+        self.enter_command("results = analyze_function(data)")
+        
+        # Export results
+        self.enter_command("save('output.mat', 'results')")
+        return self.get_file('output.mat')
+
+# Usage
+agent = MatlabAnalysis(workspace="engineering-matlab")
+results = agent.process_data("experiment.mat")
+```
+
+## Common Patterns
+
+### Data Processing
+```python
+def analyze_signals(self):
+    self.enter_command("""
+    [y, Fs] = audioread('input.wav');
+    y_filtered = lowpass(y, 1000, Fs);
+    audiowrite('filtered.wav', y_filtered, Fs);
+    """)
+```
+
+### Machine Learning
+```python
+def train_model(self):
+    self.enter_command("""
+    data = readtable('training.csv');
+    model = fitcnet(data.X, data.Y);
+    save('model.mat', 'model');
+    """)
+```
+
+<Callout>
+Wirtual agents interact with MATLAB like humans would - typing commands, using interfaces, managing files - all within secure workstations.
+</Callout>
+```
