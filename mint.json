@@ -67,7 +67,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction"
+        "introduction",
         "how-it-works"
       ]
     },
