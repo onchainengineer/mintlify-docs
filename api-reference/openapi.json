@@ -10,11 +10,11 @@ info:
     url: https://wirtual.dev
     email: support@wirtual.dev
   license:
-    name: AGPL-3.0
+    name: MIT
     url: https://github.com/wirtualdev/wirtualdev/blob/main/LICENSE
   version: "2.0"
 servers:
-- url: https://wirtual.e4.cloud.visca.dev/api/v2
+- url: https://cloud.wirtual.dev/api/v2
 paths:
   /:
     get:
