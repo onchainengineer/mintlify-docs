@@ -7,9 +7,9 @@
   },
   "favicon": "/wirtual.svg",
   "colors": {
-    "primary": "#2563EB", // Bright blue - modern tech feel
-    "light": "#60A5FA", // Lighter blue for contrast
-    "dark": "#1E40AF", // Dark blue for depth
+    "primary": "#2563EB",
+    "light": "#60A5FA",
+    "dark": "#1E40AF",
     "anchors": {
       "from": "#2563EB",
       "to": "#60A5FA"
