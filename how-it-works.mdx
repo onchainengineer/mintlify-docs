@@ -1,44 +1,64 @@
----
-title: 'How It Works'
-description: 'Creating a workstation for your AI agent is as simple as defining what it needs.'
----
+# How It Works
 
-```hcl
-# Define a workstation for a sales agent
-resource "workstation" "sales_agent" {
-  name     = "sales-automation"
-  image    = "windows-base"    # Windows environment
-  
-  resources {
-    cpu    = 2
-    memory = "4GB"
-  }
+## Overview
 
-  applications = [
-    "crm",      # Sales CRM access
-    "browser",  # Web access
-    "office"    # Document handling
-  ]
+wirtual.dev transforms physical AI development by providing instant simulation environments through a powerful yet simple architecture.
 
-  security {
-    isolation = "strict"
-    monitoring = "enabled"
-  }
-}
-```
+## Core Architecture
 
-Your AI agent can then work safely in its own environment:
+### 1. Control Layer
+- **Environment Orchestrator**
+ - Manages lifecycle of simulation environments
+ - Handles template deployment
+ - Controls resource allocation
+ - Monitors system health
 
-```python
-from your_agent import SalesAgent
+- **Template Engine**
+ - Manages versioned templates
+ - Handles environment configurations
+ - Processes custom templates
+ - Validates configurations
 
-# Your AI agent logic
-def automate_sales():
-    update_leads()
-    send_follow_ups()
-    update_crm()
+- **Resource Scheduler**  
+ - Allocates compute resources
+ - Manages GPU distribution
+ - Handles scaling operations
+ - Optimizes resource usage
 
-# Safely execute in isolated workstation
-agent = SalesAgent(workstation="sales-automation")
-agent.run(automate_sales)
-```
+### 2. Compute Layer
+- **Environment Runner**
+ - Executes simulation environments
+ - Manages container lifecycle
+ - Handles state persistence
+ - Ensures isolation
+
+- **GPU Manager**
+ - Allocates GPU resources
+ - Optimizes utilization
+ - Manages sharing policies
+ - Handles failover
+
+- **Storage Controller**
+ - Manages persistent volumes 
+ - Handles data replication
+ - Controls snapshot lifecycle
+ - Optimizes I/O performance
+
+### 3. Access Layer  
+- **Authentication Service**
+ - Handles user authentication
+ - Manages access tokens
+ - Controls session lifecycle
+ - Integrates with SSO
+
+- **Authorization Manager**
+ - Enforces access policies
+ - Manages role assignments
+ - Controls resource limits
+ - Validates permissions
+
+- **Audit Logger**
+ - Records system events
+ - Tracks user actions
+ - Monitors resource usage
+ - Generates compliance reports

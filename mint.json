@@ -27,7 +27,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://cloud.demo.wirtual.dev"
+    "url": "https://cloud.wirtual.dev"
   },
   "tabs": [
     {
@@ -345,7 +345,7 @@
     "linkedin": "https://linkedin.com/company/wirtual-ai"
   },
   "api": {
-    "baseUrl": "https://cloud.demo.wirtual.dev/api/v2",
+    "baseUrl": "https://cloud.wirtual.dev/api/v2",
     "auth": {
       "method": "key"
     }
