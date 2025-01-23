@@ -17,6 +17,10 @@
   },
   "topbarLinks": [
     {
+      "name": "Community",
+      "url": "https://github.com/orgs/wirtual-ai/discussions"
+    },
+    {
       "name": "Support",
       "url": "mailto:hi@wirtual.dev"
     }
