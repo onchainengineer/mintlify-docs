@@ -1,0 +1,178 @@
+---
+title: 'Template Basics'
+description: 'Learn how to create and configure environment templates for physical AI development'
+---
+
+# Template Basics
+
+Environment templates define the configuration, resources, and settings for your simulation environments. This guide covers the fundamentals of creating and working with templates.
+
+## Template Structure
+
+A wirtual.dev template consists of:
+
+<CardGroup cols={2}>
+  <Card title="Configuration" icon="gear" color="#2563EB">
+    * Environment settings
+
+    * Hardware requirements
+
+    * Network configuration
+
+    * Storage specifications
+  </Card>
+
+  <Card title="Parameters" icon="sliders" color="#2563EB">
+    * Simulation settings
+
+    * Sensor configurations
+
+    * Environment variables
+
+    * Build options
+  </Card>
+</CardGroup>
+
+## Creating Templates
+
+### Initialize Template
+
+Start with a pre-built template or create from scratch:
+
+<CodeGroup>
+  ```bash From Example
+  wirtual templates init --id devcontainer-docker
+  cd my-template
+  ```
+
+  ```bash Custom Template
+  mkdir my-template
+  cd my-template
+  # Add your configuration files
+  ```
+</CodeGroup>
+
+### Configure Settings
+
+Templates support various configuration options:
+
+```bash
+# Set default parameters
+wirtual templates push my-template \
+    --parameter "simulation_type=training" \
+    --parameter "gpu_enabled=true"
+
+# Configure provisioner
+wirtual templates push my-template \
+    --provisioner-tag "gpu=true" \
+    --provisioner-tag "region=us-west"
+```
+
+### Test Template
+
+Verify your template works as expected:
+
+```bash
+# Create test workspace
+wirtual create test-env --template my-template
+
+# Verify environment
+wirtual show test-env
+```
+
+## Template Components
+
+<AccordionGroup>
+  <Accordion title="Base Configuration" icon="file">
+    Core template settings that define the environment:
+
+    ```yaml
+    name: my-template
+    description: Custom simulation environment
+    version: 1.0.0
+    ```
+  </Accordion>
+
+  <Accordion title="Resource Requirements" icon="server">
+    Hardware and computing resources:
+
+    ```yaml
+    resources:
+      cpu: 4
+      memory: 16Gi
+      gpu: true
+    ```
+  </Accordion>
+
+  <Accordion title="Environment Variables" icon="code">
+    Default environment configuration:
+
+    ```yaml
+    environment:
+      SIMULATION_TYPE: training
+      ROBOT_MODEL: ur5
+      SENSOR_CONFIG: basic
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Parameter Types
+
+Templates support different parameter types for customization:
+
+<CardGroup cols={2}>
+  <Card title="Rich Parameters" icon="sliders" color="#2563EB">
+    Persistent configuration values that affect the environment setup
+
+    ```bash
+    wirtual create env --parameter "robot_type=ur5"
+    ```
+  </Card>
+
+  <Card title="Build Options" icon="gear" color="#2563EB">
+    One-time build configuration options
+
+    ```bash
+    wirtual create env --build-option "debug=true"
+    ```
+  </Card>
+</CardGroup>
+
+## Version Control
+
+Manage template versions effectively:
+
+<Steps>
+  <Step title="Create Version">
+    ```bash
+    wirtual templates push my-template \
+        --message "Added new sensor config"
+    ```
+  </Step>
+
+  <Step title="List Versions">
+    ```bash
+    wirtual templates versions list my-template
+    ```
+  </Step>
+
+  <Step title="Promote Version">
+    ```bash
+    wirtual templates versions promote \
+        --template my-template \
+        --template-version v1.0
+    ```
+  </Step>
+</Steps>
+
+## Next Steps
+
+<CardGroup>
+  <Card title="Template Management" icon="gear" href="template-management" color="#2563EB">
+    Learn about template versioning and access control
+  </Card>
+
+  <Card title="Parameters Guide" icon="sliders" href="template-parameters" color="#2563EB">
+    Deep dive into template parameters
+  </Card>
+</CardGroup>

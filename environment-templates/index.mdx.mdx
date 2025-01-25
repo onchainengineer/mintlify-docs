@@ -1,0 +1,136 @@
+---
+title: 'Environment Templates'
+description: 'Pre-configured simulation environments for physical AI development'
+---
+
+Environment templates are the foundation of wirtual.dev, providing ready-to-use configurations for physical AI development and testing. Each template includes pre-configured simulation tools, dependencies, and settings optimized for specific use cases.
+
+## Quick Start
+
+<CodeGroup>
+  ```bash Development Environment
+  wirtual templates init --id devcontainer-docker
+  wirtual create dev-env --template devcontainer-docker
+  ```
+
+  ```bash Robotic Arm Simulation
+  wirtual create arm-sim --template robot-arm \
+      --parameter "robot_type=6dof" \
+      --parameter "sensors=camera,lidar"
+  ```
+
+  ```bash Multi-Agent Testing
+  wirtual create multi-agent --template swarm \
+      --parameter "agent_count=5" \
+      --parameter "environment=warehouse"
+  ```
+</CodeGroup>
+
+## Available Templates
+
+<CardGroup cols={2}>
+  <Card title="Development Container" icon="code" color="#2563EB">
+    Base environment for custom development with GPU support and common AI frameworks
+  </Card>
+
+  <Card title="Robotic Arm" icon="robot" color="#2563EB">
+    Preconfigured for robotic arm control, grasping, and manipulation tasks
+  </Card>
+
+  <Card title="Autonomous Navigation" icon="car" color="#2563EB">
+    Environments for autonomous vehicle and robot navigation testing
+  </Card>
+
+  <Card title="Multi-Agent Systems" icon="cubes" color="#2563EB">
+    Template for multi-agent simulations and swarm behavior testing
+  </Card>
+</CardGroup>
+
+## Key Features
+
+<AccordionGroup>
+  <Accordion title="Version Control" icon="code-branch">
+    * Manage template versions
+
+    * Track configuration changes
+
+    * Roll back to previous versions
+
+    * Archive unused templates
+  </Accordion>
+
+  <Accordion title="Environment Configuration" icon="sliders">
+    * Customize simulation parameters
+
+    * Configure hardware resources
+
+    * Set up sensor models
+
+    * Define environment variables
+  </Accordion>
+
+  <Accordion title="Team Collaboration" icon="users">
+    * Share templates across teams
+
+    * Control access permissions
+
+    * Standardize development environments
+
+    * Track template usage
+  </Accordion>
+</AccordionGroup>
+
+## Basic Operations
+
+### List Templates
+
+```bash
+# List all available templates
+wirtual templates list
+
+# Show template versions
+wirtual templates versions list my-template
+```
+
+### Create Template
+
+```bash
+# Initialize from example
+wirtual templates init --id devcontainer-docker
+
+# Push template changes
+wirtual templates push my-template \
+    --message "Initial configuration"
+```
+
+### Manage Versions
+
+```bash
+# Promote version
+wirtual templates versions promote \
+    --template my-template \
+    --template-version v1.0
+
+# Archive old version
+wirtual templates versions archive my-template old-version
+```
+
+## Learn More
+
+<CardGroup>
+  <Card title="Template Creation" icon="plus" href="template-basics" color="#2563EB">
+    Learn how to create and configure templates
+  </Card>
+
+  <Card title="Template Management" icon="gear" href="template-management" color="#2563EB">
+    Manage template versions and access
+  </Card>
+
+  <Card title="Parameters Guide" icon="sliders" href="template-parameters" color="#2563EB">
+    Configure template parameters
+  </Card>
+
+  <Card title="Best Practices" icon="book" href="template-best-practices" color="#2563EB">
+    Template development guidelines
+  </Card>
+</CardGroup>
