@@ -1,105 +1,106 @@
 ---
-title: "How It Works"
+title: "Getting Started"
+description: "Set up your first AI simulation environment with wirtual.dev in under 5 minutes"
 ---
 
-# Overview
+## Quick Install
 
-wirtual.dev transforms physical AI development by providing instant simulation environments through a powerful yet simple architecture.
+<Steps>
+  <Step title="Install CLI">
+    ```bash
+    curl -L https://wirtual.dev/install.sh | sh
+    ```
+  </Step>
 
-## Core Architecture
+  <Step title="Authenticate">
+    ```bash
+    wirtual login
+    ```
+  </Step>
 
-### 1. Control Layer
+  <Step title="Create Environment">
+    ```bash
+    wirtual create my-first-sim --template basic-robot
+    ```
+  </Step>
+</Steps>
 
-* **Environment Orchestrator**
+## Core Components
 
-* Manages lifecycle of simulation environments
+<CardGroup cols={3}>
+  <Card title="Environment Templates" icon="cubes" color="#2563EB">
+    Pre-configured templates with simulation settings, hardware specs, and sensor configs
+  </Card>
 
-* Handles template deployment
+  <Card title="Workspaces" icon="rocket" color="#2563EB">
+    Active development environments with instant deployment and monitoring
+  </Card>
 
-* Controls resource allocation
+  <Card title="Development Tools" icon="tools" color="#2563EB">
+    SSH access, VSCode integration, and Git support
+  </Card>
+</CardGroup>
 
-* Monitors system health
+## Documentation Overview
 
-* **Template Engine**
+<CardGroup cols={2}>
+  <Card title="Cookbook" icon="book" color="#2563EB" href="/cookbook">
+    Step-by-step guides and tutorials for common scenarios
+  </Card>
 
-* Manages versioned templates
+  <Card title="Demo Recordings" icon="video" color="#2563EB" href="/demo-recordings">
+    Visual demonstrations of platform features
+  </Card>
 
-* Handles environment configurations
+  <Card title="Environment Templates" icon="cubes" color="#2563EB" href="/environment-templates">
+    Browse available simulation templates
+  </Card>
 
-* Processes custom templates
+  <Card title="API Reference" icon="code" color="#2563EB" href="/api-reference">
+    Complete REST API documentation
+  </Card>
 
-* Validates configurations
+  <Card title="SDK Reference" icon="puzzle-piece" color="#2563EB" href="/sdk-reference">
+    Client library documentation and examples
+  </Card>
 
-* **Resource Scheduler**
+  <Card title="CLI Reference" icon="terminal" color="#2563EB" href="/cli-reference">
+    Comprehensive command-line tool documentation
+  </Card>
+</CardGroup>
 
-* Allocates compute resources
+## Next Steps
 
-* Manages GPU distribution
+<Steps>
+  <Step title="Explore Templates">
+    Browse our [pre-built templates](/environment-templates) to find the right starting point for your project.
+  </Step>
 
-* Handles scaling operations
+  <Step title="Follow Tutorials">
+    Check out our [cookbook](/cookbook) for guided examples and best practices.
+  </Step>
 
-* Optimizes resource usage
+  <Step title="Join Community">
+    Connect with other developers building physical AI systems.
+  </Step>
+</Steps>
 
-### 2. Compute Layer
+## Support
 
-* **Environment Runner**
+Need assistance? We're here to help:
 
-* Executes simulation environments
+<CardGroup cols={3}>
+  <Card title="Watch Demos" icon="video" color="#2563EB" href="/demo-recordings">
+    Visual guides and feature demonstrations
+  </Card>
 
-* Manages container lifecycle
+  <Card title="CLI Reference" icon="terminal" color="#2563EB" href="/cli-reference">
+    Detailed command documentation
+  </Card>
 
-* Handles state persistence
-
-* Ensures isolation
-
-* **GPU Manager**
-
-* Allocates GPU resources
-
-* Optimizes utilization
-
-* Manages sharing policies
-
-* Handles failover
-
-* **Storage Controller**
-
-* Manages persistent volumes
-
-* Handles data replication
-
-* Controls snapshot lifecycle
-
-* Optimizes I/O performance
-
-### 3. Access Layer
-
-* **Authentication Service**
-
-* Handles user authentication
-
-* Manages access tokens
-
-* Controls session lifecycle
-
-* Integrates with SSO
-
-* **Authorization Manager**
-
-* Enforces access policies
-
-* Manages role assignments
-
-* Controls resource limits
-
-* Validates permissions
-
-* **Audit Logger**
-
-* Records system events
-
-* Tracks user actions
-
-* Monitors resource usage
-
-* Generates compliance reports
+  <Card title="Generate Support Bundle" icon="life-ring" color="#2563EB">
+    ```bash
+    wirtual support bundle my-workspace
+    ```
+  </Card>
+</CardGroup>
