@@ -71,20 +71,20 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "how-it-works"
+        "index",
+        "getting-started"
       ]
     },
     {
       "group": "API Documentation",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/index"
       ]
     },
     {
       "group": "SDK Documentation", 
       "pages": [
-        "sdk-reference/introduction"
+        "sdk-reference/index"
       ]
     },
     {
@@ -323,19 +323,20 @@
     {
       "group": "Cookbook",
       "pages": [
-        "cookbook/introduction"
+        "cookbook/index"
       ]
     },
     {
       "group": "Demo Recordings",
       "pages": [
-        "demo-recordings/introduction"
+        "demo-recordings/index"
       ]
     },
     {
       "group": "Environment Templates",
       "pages": [
-        "environment-templates/introduction"  
+        "environment-templates/index",
+        "environment-templates/template-basics"
       ]
     }
   ],
