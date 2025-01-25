@@ -1,1 +1,237 @@
-COMING SOON!!
+---
+title: 'SDK Reference'
+description: 'Official client libraries and SDKs for wirtual.dev'
+---
+
+wirtual.dev provides official SDKs and client libraries to help you integrate simulation environments into your applications and workflows. Our SDKs offer type-safe, idiomatic ways to interact with the wirtual.dev API in your preferred programming language.
+
+## Available SDKs
+
+<CardGroup cols={2}>
+  <Card title="Python SDK" icon="python" color="#2563EB" href="/sdk-reference/python">
+    ```bash
+    pip install wirtual-sdk
+    ```
+
+    The official Python client library for wirtual.dev
+  </Card>
+
+  <Card title="JavaScript/TypeScript" icon="js" color="#2563EB" href="/sdk-reference/javascript">
+    ```bash
+    npm install @wirtual/sdk
+    ```
+
+    SDK for Node.js and browser environments
+  </Card>
+</CardGroup>
+
+## Core Features
+
+<CardGroup cols={3}>
+  <Card title="Environment Management" icon="cubes" color="#2563EB">
+    Create, manage, and monitor simulation environments programmatically
+  </Card>
+
+  <Card title="Template Operations" icon="file-code" color="#2563EB">
+    Work with templates and configurations
+  </Card>
+
+  <Card title="Resource Control" icon="server" color="#2563EB">
+    Monitor and control compute resources
+  </Card>
+</CardGroup>
+
+## Quick Start
+
+### Python
+
+```python
+from wirtual import Client
+
+# Initialize client
+client = Client()
+
+# Create environment
+env = client.create_environment(
+    name="my-sim",
+    template="robot-arm",
+    parameters={
+        "robot_type": "6dof",
+        "gpu_enabled": True
+    }
+)
+
+# Start environment
+env.start()
+```
+
+### JavaScript/TypeScript
+
+```typescript
+import { WirtualClient } from '@wirtual/sdk'
+
+// Initialize client
+const client = new WirtualClient()
+
+// Create environment
+const env = await client.createEnvironment({
+  name: 'my-sim',
+  template: 'robot-arm',
+  parameters: {
+    robotType: '6dof',
+    gpuEnabled: true
+  }
+})
+
+// Start environment
+await env.start()
+```
+
+## Authentication
+
+<CodeGroup>
+  ```python Python
+  from wirtual import Client
+
+  client = Client(
+      token="your-api-token"
+  )
+  ```
+
+  ```typescript JavaScript
+  import { WirtualClient } from '@wirtual/sdk'
+
+  const client = new WirtualClient({
+    token: 'your-api-token'
+  })
+  ```
+</CodeGroup>
+
+## Common Operations
+
+### Managing Environments
+
+<CodeGroup>
+  ```python Python
+  # List environments
+  envs = client.list_environments()
+
+  # Get specific environment
+  env = client.get_environment("my-sim")
+
+  # Stop environment
+  env.stop()
+
+  # Delete environment
+  env.delete()
+  ```
+
+  ```typescript JavaScript
+  // List environments
+  const envs = await client.listEnvironments()
+
+  // Get specific environment
+  const env = await client.getEnvironment('my-sim')
+
+  // Stop environment
+  await env.stop()
+
+  // Delete environment
+  await env.delete()
+  ```
+</CodeGroup>
+
+### Working with Templates
+
+<CodeGroup>
+  ```python Python
+  # List templates
+  templates = client.list_templates()
+
+  # Get template details
+  template = client.get_template("robot-arm")
+
+  # Create from template
+  env = client.create_environment(
+      template=template.name,
+      parameters=template.default_parameters
+  )
+  ```
+
+  ```typescript JavaScript
+  // List templates
+  const templates = await client.listTemplates()
+
+  // Get template details
+  const template = await client.getTemplate('robot-arm')
+
+  // Create from template
+  const env = await client.createEnvironment({
+    template: template.name,
+    parameters: template.defaultParameters
+  })
+  ```
+</CodeGroup>
+
+## SDK-Specific Features
+
+### Python SDK
+
+* Async/await support
+
+* Type hints
+
+* Context managers
+
+* Pandas integration
+
+### JavaScript/TypeScript SDK
+
+* Promise-based API
+
+* Full TypeScript support
+
+* Browser and Node.js compatibility
+
+* Automatic retry handling
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Error Handling" icon="shield" color="#2563EB">
+    Implement proper error handling and retries for reliability:
+
+    ```python
+    try:
+        env = client.create_environment(...)
+    except WirtualError as e:
+        logger.error(f"Failed to create environment: {e}")
+    ```
+  </Card>
+
+  <Card title="Resource Cleanup" icon="broom" color="#2563EB">
+    Always clean up resources when no longer needed:
+
+    ```python
+    with client.create_environment(...) as env:
+        # Use environment
+        pass  # Auto-cleanup on exit
+    ```
+  </Card>
+</CardGroup>
+
+## SDK Documentation
+
+<CardGroup cols={2}>
+  <Card title="Python Reference" icon="book" color="#2563EB" href="/sdk-reference/python">
+    Complete Python SDK documentation with examples and API reference
+  </Card>
+
+  <Card title="JavaScript/TypeScript Reference" icon="book" color="#2563EB" href="/sdk-reference/javascript">
+    JavaScript/TypeScript SDK guide with type definitions and examples
+  </Card>
+</CardGroup>
+
+<Note>
+  All SDKs are open source and available on [GitHub](https://github.com/wirtual). We welcome contributions and feedback from the community.
+</Note>
