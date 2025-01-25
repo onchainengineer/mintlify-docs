@@ -1,0 +1,198 @@
+---
+title: 'Basic Development Environment'
+description: 'Set up a standard development environment for physical AI projects'
+---
+
+# Basic Development Environment
+
+This guide walks you through setting up a standard development environment for physical AI projects using wirtual.dev.
+
+## Prerequisites
+
+<Check>wirtual CLI installed</Check>
+<Check>Authentication configured</Check>
+<Check>Basic understanding of templates</Check>
+
+## Step-by-Step Guide
+
+### 1. Create Development Environment
+
+<CodeGroup>
+  ```bash Basic Setup
+  wirtual create dev-env \
+      --template devcontainer-docker \
+      --parameter "gpu_enabled=true"
+  ```
+
+  ```bash With Custom Resources
+  wirtual create dev-env \
+      --template devcontainer-docker \
+      --parameter "gpu_enabled=true" \
+      --parameter "cpu_cores=8" \
+      --parameter "memory=32Gi"
+  ```
+</CodeGroup>
+
+### 2. Configure Development Tools
+
+<AccordionGroup>
+  <Accordion title="SSH Access" icon="terminal">
+    Configure SSH access to your environment:
+
+    ```bash
+    # Configure SSH
+    wirtual config-ssh
+
+    # Connect to environment
+    ssh wirtual.dev-env
+    ```
+  </Accordion>
+
+  <Accordion title="VSCode Integration" icon="code">
+    Set up VSCode remote development:
+
+    ```bash
+    # Open in VSCode
+    wirtual open vscode dev-env
+    ```
+  </Accordion>
+
+  <Accordion title="Port Forwarding" icon="network-wired">
+    Forward ports for web interfaces:
+
+    ```bash
+    wirtual port-forward dev-env \
+        --tcp 8080:8080 \
+        --tcp 6006:6006
+    ```
+  </Accordion>
+</AccordionGroup>
+
+### 3. Install Additional Tools
+
+```bash
+# Connect to environment
+ssh wirtual.dev-env
+
+# Install common tools
+sudo apt-get update
+sudo apt-get install -y \
+    python3-pip \
+    git \
+    curl \
+    wget
+```
+
+### 4. Configure Environment
+
+<Steps>
+  <Step title="Clone Your Repository">
+    ```bash
+    git clone https://github.com/your/repo.git
+    cd repo
+    ```
+  </Step>
+
+  <Step title="Install Dependencies">
+    ```bash
+    pip install -r requirements.txt
+    ```
+  </Step>
+
+  <Step title="Configure Git">
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "your@email.com"
+    ```
+  </Step>
+</Steps>
+
+## Common Configurations
+
+### Python Development
+
+```yaml
+# requirements.txt
+numpy>=1.21.0
+torch>=1.9.0
+gym>=0.21.0
+matplotlib>=3.4.0
+```
+
+### Environment Variables
+
+```bash
+# Set up environment variables
+export PYTHONPATH="${PYTHONPATH}:${PWD}"
+export CUDA_VISIBLE_DEVICES=0
+```
+
+### VSCode Settings
+
+```json
+{
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black"
+}
+```
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Resource Management" icon="server" color="#2563EB">
+    * Monitor resource usage
+
+    * Clean up unused environments
+
+    * Use appropriate instance sizes
+  </Card>
+
+  <Card title="Development Workflow" icon="code-branch" color="#2563EB">
+    * Use version control
+
+    * Document setup steps
+
+    * Share configurations
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Connection Issues" icon="plug">
+    If you can't connect via SSH:
+
+    ```bash
+    # Regenerate SSH config
+    wirtual config-ssh --reset
+
+    # Check connection
+    wirtual ping dev-env
+    ```
+  </Accordion>
+
+  <Accordion title="Resource Problems" icon="memory">
+    If experiencing performance issues:
+
+    ```bash
+    # Check resource usage
+    wirtual stat dev-env
+
+    # Update resources
+    wirtual update dev-env --parameter "memory=64Gi"
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup>
+  <Card title="GPU Training Setup" icon="microchip" href="gpu-training" color="#2563EB">
+    Configure environment for GPU training
+  </Card>
+
+  <Card title="Team Development" icon="users" href="team-setup" color="#2563EB">
+    Set up collaborative development
+  </Card>
+</CardGroup>
